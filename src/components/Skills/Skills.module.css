@@ -1,0 +1,101 @@
+.skills {
+  padding: var(--section-gap) 0;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 4rem;
+}
+
+.heading em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+/* ─── Marquee ────────────────────────────────────────── */
+.marqueeArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.rowWrapper {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  padding: 0.75rem 0;
+}
+
+.rowWrapper:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.row {
+  display: flex;
+  width: max-content;
+  animation: marquee linear infinite;
+  will-change: transform;
+}
+
+.row.reverse {
+  animation-name: marqueeReverse;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marqueeReverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  padding: 0 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.item:hover {
+  color: var(--accent);
+}
+
+.dot {
+  font-size: 1.2em;
+  color: var(--border);
+  margin: 0 0.75rem;
+}
+
+/* Pause on hover */
+.rowWrapper:hover .row {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .row {
+    animation: none;
+  }
+  .rowWrapper {
+    overflow-x: auto;
+  }
+}

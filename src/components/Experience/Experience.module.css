@@ -1,0 +1,179 @@
+.experience {
+  padding: var(--section-gap) 0;
+  background: var(--bg);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 4rem;
+}
+
+.heading em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+/* ─── Timeline ───────────────────────────────────────── */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 2rem;
+}
+
+/* The vertical track (background) */
+.lineTrack {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+/* The drawn line (GSAP animates scaleY from 0 → 1) */
+.lineDrawn {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform-origin: top center;
+  opacity: 0.6;
+}
+
+/* Each row */
+.entry {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.entry:last-child {
+  padding-bottom: 0;
+}
+
+.dot {
+  position: absolute;
+  left: -2.375rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--accent);
+  will-change: transform, opacity;
+}
+
+/* ─── Card ───────────────────────────────────────────── */
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  will-change: transform, opacity;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 24px rgba(0, 102, 255, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.company {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.role {
+  display: block;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+
+.period {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.location {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 0.2rem 0.55rem;
+  border-radius: 99px;
+  border: 1px solid var(--accent);
+  opacity: 0.9;
+}
+
+/* Move badge below header on small screens to avoid overlap */
+@media (max-width: 500px) {
+  .cardHeader {
+    flex-direction: column;
+  }
+
+  .meta {
+    align-items: flex-start;
+  }
+
+  .badge {
+    position: static;
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+  }
+}

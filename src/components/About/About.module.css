@@ -1,0 +1,68 @@
+.about {
+  padding: var(--section-gap) 0;
+  background: var(--surface);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+/* ─── Stats ──────────────────────────────────────────── */
+.stats {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  will-change: transform, opacity;
+}
+
+.statValue {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  max-width: 120px;
+  line-height: 1.4;
+}
+
+/* ─── Bio ────────────────────────────────────────────── */
+.bios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.bio {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 600px) {
+  .bios {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stats {
+    gap: 2rem;
+  }
+}

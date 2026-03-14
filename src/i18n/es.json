@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Skills",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "role": "> Senior Frontend Engineer",
+    "tagline": "Construyendo plataformas frontend escalables en Mercado Pago. Apasionado por la arquitectura frontend, observabilidad y desarrollo con IA.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "bio": "Soy Senior Software Engineer en Mercado Pago (Mercado Libre), donde trabajo en el ecosistema de Point of Sale — plataformas utilizadas por miles de comercios en Latinoamérica. Me enfoco en arquitectura frontend y aplicaciones web escalables, colaborando con equipos de producto, diseño y backend para construir software de alta calidad.",
+    "bio2": "A lo largo de los años integré el desarrollo asistido por IA en mi flujo de trabajo, trabajando con LLMs, agentes de IA, sistemas RAG y bases de datos vectoriales para mejorar la productividad del equipo. También participo activamente en la comunidad técnica de Mercado Libre, organizando charlas y compartiendo conocimiento sobre tecnologías emergentes.",
+    "tags": ["React", "TypeScript", "Arquitectura Frontend", "Desarrollo con IA", "Observabilidad", "Technical Leadership"]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "company": "Mercado Libre",
+        "role": "Sr Software Engineer",
+        "period": "Feb 2024 — Actualidad",
+        "location": "Buenos Aires · Híbrido",
+        "description": "Liderando el desarrollo frontend del ecosistema de Point of Sale en Mercado Pago. Construyendo aplicaciones React/TypeScript, librerías de componentes y promoviendo prácticas de observabilidad, testing y adopción de IA en el equipo."
+      },
+      {
+        "company": "Mercado Libre",
+        "role": "Semi Senior Software Engineer",
+        "period": "Jun 2021 — Feb 2024",
+        "location": "Buenos Aires",
+        "description": "Desarrollo frontend para el equipo de Mercado Pago, contribuyendo a funcionalidades del producto y prácticas de ingeniería."
+      },
+      {
+        "company": "Coderhouse",
+        "role": "Tutor React.js",
+        "period": "Jun 2021 — Jul 2023",
+        "location": "Remoto · Part-time",
+        "description": "Enseñando fundamentos y buenas prácticas de React.js a cientos de estudiantes en una de las principales plataformas de educación tech de LatAm."
+      },
+      {
+        "company": "Globant",
+        "role": "Semi Senior Frontend Developer",
+        "period": "Mar 2020 — May 2021",
+        "location": "Buenos Aires",
+        "description": "Desarrollé el proyecto OpenBank para Santander Río usando React, Redux y TypeScript. También trabajé en automatización de tests con Testcafe y Selenium."
+      },
+      {
+        "company": "Bennu",
+        "role": "Jr Frontend Developer",
+        "period": "Feb 2019 — Mar 2020",
+        "location": "Gran Buenos Aires",
+        "description": "Desarrollo de aplicaciones web con Angular, React y Cordova para clientes como Abaco y SoyMujer.tv."
+      },
+      {
+        "company": "TECSID",
+        "role": "Trainee Full Stack Developer",
+        "period": "Jun 2017 — Dic 2018",
+        "location": "San Miguel, Buenos Aires",
+        "description": "Proyectos web con PHP y JavaScript, cubriendo servicios de hosting, registro de dominios y tareas de marketing digital."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": ["React", "TypeScript", "JavaScript", "SCSS", "HTML5", "Storybook"]
+      },
+      {
+        "name": "Backend & Tools",
+        "items": ["Node.js", "Express", "AWS", "JIRA", "Git"]
+      },
+      {
+        "name": "Testing",
+        "items": ["Jest", "Playwright", "Testing Library"]
+      },
+      {
+        "name": "Observabilidad",
+        "items": ["New Relic", "Datadog", "Grafana", "Looker"]
+      },
+      {
+        "name": "IA & Automatización",
+        "items": ["GitHub Copilot", "Claude AI", "LLMs", "Sistemas RAG"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Conectemos",
+    "subtitle": "Disponible para colaboraciones, conversaciones técnicas o simplemente charlar sobre frontend e IA.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "built": "Construido con React & TypeScript",
+    "rights": "Aaron Saban"
+  }
+}

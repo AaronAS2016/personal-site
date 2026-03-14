@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "> Senior Frontend Engineer",
+    "tagline": "Building scalable frontend platforms at Mercado Pago. Passionate about frontend architecture, observability, and AI-driven development.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "about": {
+    "title": "About",
+    "bio": "I'm a Senior Software Engineer at Mercado Pago (Mercado Libre), where I work on the Point of Sale ecosystem — platforms used by thousands of merchants across Latin America. My focus is on frontend architecture and scalable web applications, collaborating closely with product, design, and backend teams to ship reliable, high-quality software.",
+    "bio2": "Over the years I've integrated AI-assisted development into my workflow, working with LLMs, AI agents, RAG systems, and vector databases to improve engineering productivity. I also contribute to the technical community at Mercado Libre, organizing talks and sharing knowledge about emerging technologies.",
+    "tags": ["React", "TypeScript", "Frontend Architecture", "AI-Driven Dev", "Observability", "Technical Leadership"]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "Mercado Libre",
+        "role": "Sr Software Engineer",
+        "period": "Feb 2024 — Present",
+        "location": "Buenos Aires · Hybrid",
+        "description": "Leading frontend development for the Point of Sale ecosystem at Mercado Pago. Building scalable React/TypeScript applications, internal component libraries, and driving observability, testing, and AI adoption practices across the team."
+      },
+      {
+        "company": "Mercado Libre",
+        "role": "Semi Senior Software Engineer",
+        "period": "Jun 2021 — Feb 2024",
+        "location": "Buenos Aires",
+        "description": "Frontend development for the Mercado Pago team, contributing to core product features and engineering practices."
+      },
+      {
+        "company": "Coderhouse",
+        "role": "React.js Instructor",
+        "period": "Jun 2021 — Jul 2023",
+        "location": "Remote · Part-time",
+        "description": "Teaching React.js fundamentals and best practices to hundreds of students in a leading LatAm tech education platform."
+      },
+      {
+        "company": "Globant",
+        "role": "Semi Senior Frontend Developer",
+        "period": "Mar 2020 — May 2021",
+        "location": "Buenos Aires",
+        "description": "Built the OpenBank project for Santander Río using React, Redux, and TypeScript. Also worked on test automation with Testcafe and Selenium."
+      },
+      {
+        "company": "Bennu",
+        "role": "Jr Frontend Developer",
+        "period": "Feb 2019 — Mar 2020",
+        "location": "Gran Buenos Aires",
+        "description": "Developed web applications using Angular, React, and Cordova for clients including Abaco and SoyMujer.tv."
+      },
+      {
+        "company": "TECSID",
+        "role": "Trainee Full Stack Developer",
+        "period": "Jun 2017 — Dec 2018",
+        "location": "San Miguel, Buenos Aires",
+        "description": "Built web projects with PHP and JavaScript, covering hosting services, domain registration, and internet marketing tasks."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": ["React", "TypeScript", "JavaScript", "SCSS", "HTML5", "Storybook"]
+      },
+      {
+        "name": "Backend & Tools",
+        "items": ["Node.js", "Express", "AWS", "JIRA", "Git"]
+      },
+      {
+        "name": "Testing",
+        "items": ["Jest", "Playwright", "Testing Library"]
+      },
+      {
+        "name": "Observability",
+        "items": ["New Relic", "Datadog", "Grafana", "Looker"]
+      },
+      {
+        "name": "AI & Automation",
+        "items": ["GitHub Copilot", "Claude AI", "LLMs", "RAG Systems"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's connect",
+    "subtitle": "Open to collaborations, technical conversations, or just a good chat about frontend and AI.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "built": "Built with React & TypeScript",
+    "rights": "Aaron Saban"
+  }
+}
